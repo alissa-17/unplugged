@@ -91,7 +91,7 @@ textarea {
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
 /* Header styles*/
@@ -108,6 +108,7 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  padding: 0;
 }
 
 .header-divider {
@@ -149,6 +150,7 @@ footer p {
 footer .contact {
   margin-bottom: 50px;
 }
+
 /*
 footer .contact h4 {
   padding: 20px 0;
@@ -162,7 +164,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-/*  padding-bottom: 50px;*/
+  /*  padding-bottom: 50px;*/
 }
 
 footer .social-icons p {
@@ -190,6 +192,7 @@ aside {
   display: flex;
   justify-content: center;
 }
+
 /*
 .form-description h3 {
   padding: 20px 0;
@@ -229,6 +232,7 @@ aside {
   width: 63%;
   margin: 30px 0;
 }
+
 /*
 .features article .fontawesome-icon {
   padding-bottom: 40px;
@@ -389,9 +393,10 @@ aside {
 
   /* Header*/
 
-  header{
+  header {
     padding: 33px;
   }
+
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
@@ -400,7 +405,8 @@ aside {
   .header-divider {
     display: none;
   }
-/*
+
+  /*
   header img {
     width: 30%;
   }
@@ -415,7 +421,7 @@ aside {
   }
 
   /* Hero-area */
-/*
+  /*
   .hero-area h1 {
     width: 82%;
   }
@@ -453,7 +459,7 @@ aside {
   }
 
   /* Reviews */
-/*
+  /*
   .reviews .content-wrapper h2 {
     width: 75%;
   }
@@ -477,11 +483,11 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   /* padding: 100px 0;*/
+    /* padding: 100px 0;*/
   }
 
   footer h4 {
-    margin:0 0 40px 0;
+    margin: 0 0 40px 0;
   }
 
   footer .contact {
@@ -533,7 +539,8 @@ aside {
     justify-content: space-between;
     align-items: flex-start;
   }
-/*
+
+  /*
   .general-content {
     width: 40%;
   }
@@ -549,8 +556,68 @@ aside {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles */
 
+  /* Desktop styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Header*/
+  header {
+    padding: 15px;
+  }
+
+  /*Hero-area*/
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /*Aside*/
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .form,
+  aside .form-description {
+    width: 30%;
+  }
+
+  /*Features*/
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /*
+  .features .features-item-description {
+    width: 20%;
+  }
+*/
+  /* Reviews */
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /*
+  .reviews h2 {
+    margin-bottom: 50px;
+  }
+*/
+  /* =========== About Page ===========*/
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* =========== FAQ Page ===========*/
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
