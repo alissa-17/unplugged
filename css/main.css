@@ -132,9 +132,13 @@ p {
   line-height: 1.125em;
 }
 
-img {}
+img {
+  width: 100%;
+}
 
-figure {}
+figure {
+  margin: 0;
+}
 
 address {
   font-style: normal;
@@ -161,6 +165,10 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin: 0;
   padding: 0;
+}
+
+header figure{
+  width: 60%;
 }
 
 .header-divider {
@@ -242,6 +250,8 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {
@@ -296,6 +306,8 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -334,6 +346,7 @@ input[type=button] {
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 30px;
+  width: 78%;
 }
 
 .reviews h3 {
@@ -524,6 +537,9 @@ input[type=button] {
 
   /* Hero-area */
 
+  .hero-area {
+    min-height: 600px;
+  }
   .hero-area h1 {
     /*width: 82%;*/
     font-size: 3em;
@@ -533,10 +549,10 @@ input[type=button] {
   /* Aside*/
 
   aside .content-wrapper {
-    margin: 50px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 50px 0;
   }
 
   aside .content-wrapper .form-description {
@@ -550,7 +566,9 @@ input[type=button] {
   }
 
   /* Features */
-
+.features h2 {
+  padding-bottom: 20px;
+}
   .features article {
     display: flex;
     align-items: center;
@@ -563,31 +581,36 @@ input[type=button] {
   }
 
   /* Reviews */
-  /*
-  .reviews .content-wrapper h2 {
-    width: 75%;
-  }
-*/
+ 
   .reviews article {
     display: flex;
     justify-content: space-between;
   }
 
-  .reviews article div {
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article div,
+  .reviews article figure {
     width: 49%;
   }
 
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
   /* Footer */
 
   footer .content-wrapper {
     width: 65%;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 100px 0;*/
+flex-direction: row;
   }
 
   footer .contact {
@@ -710,8 +733,8 @@ input[type=button] {
     justify-content: space-around;
   }
 
-  aside .form,
-  aside .form-description {
+  aside .content-wrapper .form,
+  aside .content-wrapper.form-description {
     width: 30%;
   }
 
@@ -725,11 +748,6 @@ input[type=button] {
     flex-basis: 33%;
   }
 
-  /*
-  .features .features-item-description {
-    width: 20%;
-  }
-*/
   /* Reviews */
 
   .reviews article div {
@@ -756,17 +774,17 @@ input[type=button] {
   }
 
 
-/* =========== FAQ Page ===========*/
-.faq h2 {
-  width: 100%;
-  font-size: 3em;
-}
+  /* =========== FAQ Page ===========*/
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
 
-.faq h4,
-.faq p {
-  font-size: 1.125em;
-  line-height: 18px;
-}
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 18px;
+  }
 }
 
 /* ==========================================================================
