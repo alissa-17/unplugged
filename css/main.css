@@ -330,9 +330,9 @@ input[type=button] {
   margin: 30px 0;
 }
 
-.features article .fontawesome-icon {
-  /*padding-bottom: 40px;*/
+.features i {
   font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
@@ -690,21 +690,21 @@ input[type=button] {
     padding-bottom: 45.5%;
   }
 
-.contact-section .content-wrapper h2 {
-  width: 80%;
-}
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
 
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-.contact-content h4 {
-  font-size: 1.5em;
-}
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
 
-/*
+  /*
   .general-content {
     width: 40%;
   }
