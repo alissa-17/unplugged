@@ -131,7 +131,7 @@ h4 {
 
 p {
   font-size: 0.875em;
-  line-height: 1.125em;
+  line-height: 1.125;
 }
 
 img {
@@ -255,14 +255,15 @@ footer .copyright p{
 .hero-area {
   display: flex;
   justify-content: center;
-  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background: url('../img/unplugged-retreat.jpg');
+ background-position: center;
   background-size: cover;
   min-height: 500px;
 }
 
 .hero-area h1 {
   font-size: 2.25em;
-  line-height: 43px;
+  line-height: 1.2;
   font-weight: 500;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
 }
@@ -313,25 +314,13 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
-  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background: url('../img/unplugged-retreat-features.jpg');
   background-size: cover;
-
+  background-position: center;
 }
 
 .features h2 {
   margin-bottom: 60px;
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  /*align-items: flex-start;*/
-  flex-flow: row wrap;
-}
-
-.features p {
-  text-align: center;
-  margin: 0;
 }
 
 .features article {
@@ -339,9 +328,21 @@ input[type=button] {
   margin: 30px 0;
 }
 
+.features .features-items {
+  display: flex;
+  justify-content: center;
+ /* align-items: flex-start; */
+  flex-flow: row wrap;
+}
+
 .features i {
   font-size: 3.75em;
   margin-bottom: 40px;
+}
+
+.features p {
+  text-align: center;
+  margin: 0;
 }
 
 /* Reviews */
@@ -423,7 +424,7 @@ input[type=button] {
 }
 
 .faq-content h4 {
-  line-height: 24px;
+  line-height: 1.333;
 }
 
 
@@ -530,13 +531,17 @@ input[type=button] {
 
   h3 {
     font-size: 1.5em;
-    line-height: 30px;
+    line-height: 1.25;
   }
 
   /* Header*/
 
   header {
     padding: 33px;
+  }
+
+  header a {
+    width: 35%;
   }
 
   header .content-wrapper {
@@ -822,7 +827,7 @@ font-size: 1.125em;
   }
 
   .contact-content h4 {
-    font-size: 1.875;
+    font-size: 1.875em;
   }
 
 
