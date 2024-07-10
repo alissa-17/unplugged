@@ -266,6 +266,7 @@ footer .copyright p{
   line-height: 1.2;
   font-weight: 500;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  width: 90%;
 }
 
 /* Aside*/
@@ -286,6 +287,7 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  margin-bottom: 20px;
   /*font-size: 1.125em;
   font-weight: 500;*/
 }
@@ -304,11 +306,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-/*
-.form-description p {
-  padding-bottom: 30px;
-}
-*/
+
 /* Features */
 
 .features {
@@ -516,7 +514,29 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
+   @media only screen and (min-width: 344px) {
+
+    .hero-area h1 {
+      width: 97%;
+    }
+   }
+
+   @media only screen and (min-width: 540px) {
+
+    .hero-area h1 {
+      width: 75%;
+    }
+
+    .reviews h2 {
+      width: 75%;
+    }
+
+    .reviews h3 {
+      width: 50%;
+    }
+   }
+
+   @media only screen and (min-width: 768px) {
   /* Tablets style here */
 
   .content-wrapper {
@@ -573,7 +593,7 @@ input[type=button] {
   }
 
   .hero-area h1 {
-    /*width: 82%;*/
+    width: 85%;
     font-size: 3em;
     line-height: 48px;
     margin: 0;
@@ -588,12 +608,7 @@ input[type=button] {
     padding: 50px 0;
   }
 
-  aside .content-wrapper .form-description {
-    width: 40%;
-    margin: 0;
-  }
-
-  aside .content-wrapper .form
+  aside .content-wrapper .form,
   aside .content-wrapper .form-description {
     width: 40%;
     margin: 0;
@@ -630,11 +645,15 @@ input[type=button] {
     width: 85%;
   }
 
+
   .reviews article div,
   .reviews article figure {
-    width: 49%;
+    width: 48%;
   }
 
+  .reviews article div p {
+    width: 97%;
+  }
 
   .reviews h3 {
     width: 75%;
@@ -772,13 +791,12 @@ input[type=button] {
 
   /*Hero-area*/
 
-
   /*.hero-area {
     height: 600px;
   }*/
 
   .hero-area h1 {
-    width: 80%;
+    width: 70%;
     font-size: 3.75em;
   }
 
@@ -788,12 +806,12 @@ input[type=button] {
   }
 
   aside .content-wrapper .form,
-  aside .content-wrapper.form-description {
-    width: 30%;
+  aside .content-wrapper .form-description {
+    width: 29%;
   }
 
   .form-description p {
-font-size: 1.125em;
+  font-size: 1.125em;
   }
   /*Features*/
 
